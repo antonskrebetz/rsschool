@@ -1,0 +1,32 @@
+.game-settings {
+    background-color: #2196f3;
+    padding: 1%;
+    border: 2px solid white;    
+}
+
+
+.game-settings h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.game-settings h1 {
+   margin-bottom: 15%;
+}
+
+.dificculty,
+.cardStyle {
+    width: 85%;
+    margin: 20px auto 20px;
+    display: block;
+    font-family: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.cardStyle::after {
+ content: '45454545454454';
+}
+

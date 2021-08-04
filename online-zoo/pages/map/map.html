@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Map Online Zoo</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="header-item">
+          <a href="../../index.html" class="header-logo"></a>
+          <nav>
+            <ul class="header-menu">
+              <li class="header-menu__item">
+                <a href="../../index.html">about</a>
+              </li>
+              <li class="header-menu__item active">
+                <a href="../pages/map/map.html">map</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="../zoos/pandas/pandas.html">zoos</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="../404/404.html">contact us</a>
+              </li>
+              <li class="header-menu__item">
+                <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo?node-id=0%3A1" target="_blank">design</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-item">
+          <ul class="header-tool">
+            <li class="header-tool__item header-tool__item_search">
+              <a class="header-tool__search" href="javsscript:void(0)"></a>
+              <input class="header-tool__input" type="text" placeholder="Search...">
+            </li>
+            <li class="header-tool__item">
+              <a class="header-tool__login" href="javsscript:void(0)">Log in</a>
+            </li>
+            <li class="header-tool__item">
+              <a class="header-tool__singup" href="javsscript:void(0)">Sign up</a>
+            </li>
+            <li class="header-tool__item avatar">
+              <button></button>
+            </li>
+            <li class="header-tool__item burger">
+              <button></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header> 
+  <main class="main">
+    <div class="container">
+      <h1 class="h1">Online Zoo</h1>
+      <h2 class="h2">Choose your favorite Animal</h2>
+      <div class="map-main">
+        <div class="map-wrapper">
+          <div class="nozoom" id="map">
+            <div class="map-animals">
+              <a class="map-animals__item map-animals__eagles" href="../../pages/zoos/eagles/eagles.html" tooltip="Eagles 
+              Catalina Island">
+                <div class="map-animals__img">
+                  <svg class="map-animals__path-svg">
+                    <defs>
+                      <clipPath id="map-animals_mask">
+                        <path d="M66.5743 14.6278C72.9044 23.1671 74.6628 34.8064 71.3805 43.7552C68.0982 52.704 59.8925 59.0208 50.4559 63.9338C41.078 68.8469 30.4692 72.4147 21.4429 69.3148C12.4166 66.2734 4.91425 56.6812 1.69058 45.3344C-1.47448 33.9876 -0.360846 20.8861 6.43817 12.2882C13.2958 3.63189 25.7802 -0.579307 37.5612 0.0640697C49.2837 0.707446 60.2441 6.1469 66.5743 14.6278Z" fill="#B9D5D9" fill-opacity="0.2"/>
+                      </clipPath>
+                      <clipPath id="map-animals_mask-m">
+                        <path d="M47.7806 10.2121C52.3237 16.3408 53.5857 24.6944 51.23 31.1169C48.8743 37.5395 42.985 42.0731 36.2124 45.5992C29.4818 49.1253 21.8678 51.6859 15.3896 49.4611C8.91144 47.2783 3.52697 40.394 1.21334 32.2503C-1.05824 24.1067 -0.25898 14.7037 4.62069 8.53298C9.54243 2.3203 18.5025 -0.702086 26.9578 -0.240333C35.3711 0.221421 43.2374 4.12534 47.7806 10.2121Z" fill="#B9D5D9" fill-opacity="0.2"/>
+                      </clipPath>
+                      <clipPath id="map-animals_mask-s">
+                        <path d="M57.0792 13.0077C62.4907 20.3078 63.9939 30.258 61.188 37.9082C58.382 45.5584 51.3671 50.9585 43.2999 55.1586C35.2829 59.3586 26.2136 62.4087 18.4972 59.7587C10.7808 57.1586 4.36713 48.9584 1.61127 39.2582C-1.09449 29.558 -0.142465 18.3578 5.6699 11.0076C11.5324 3.60747 22.2051 0.00739262 32.2765 0.557404C42.2978 1.10742 51.6677 5.75751 57.0792 13.0077Z" fill="#B9D5D9" fill-opacity="0.2"/>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="map-animals__img_wrapper">
+                    <img src="../../assets/img/eagle.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a class="map-animals__item map-animals__aligators" href="../../pages/zoos/aligators/aligators.html" tooltip="Aligators
+              St. Augustine's Alligator Farm Zoological Park">
+                <div class="map-animals__img">
+                  <div class="map-animals__img_wrapper">
+                    <img src="../../assets/img/crocodile.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a class="map-animals__item map-animals__gorrilas" href="../../pages/zoos/gorillas/gorillas.html" tooltip="Gorillas
+              GRACE gorillas">
+                <div class="map-animals__img">
+                  <div class="map-animals__img_wrapper">
+                    <img src="../../assets/img/gorilla.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+              <a class="map-animals__item map-animals__pandas" href="../../pages/zoos/pandas/pandas.html" tooltip="Pandas
+              Shenshuping Gengda Panda Center">
+                <div class="map-animals__img">
+                  <div class="map-animals__img_wrapper">
+                    <img src="../../assets/img/panda.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="map-zoom">
+        <button class="map-zoom__plus" id="zoomIn">
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16.2602" cy="16.2603" r="15.5102" fill="white" fill-opacity="0.4" stroke="white" stroke-width="1.5"/>
+            <path d="M16.2598 6.50415V26.0163" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M6.50391 16.2603H26.0161" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>     
+        </button>
+        <button class="map-zoom__minus" id="zoomOut">
+          <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="16.7397" cy="16.2602" r="15.5102" fill="white" fill-opacity="0.4" stroke="white" stroke-width="1.5"/>
+            <path d="M6.9834 16.2603H26.4956" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-item">
+          <a href="../map/map.html" class="footer-logo"></a>
+          <nav>
+            <ul class="footer-menu">
+              <li class="footer-menu__item">
+                <a href="../../index.html">about</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="../../pages/map/map.html">map</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="../../pages/zoos/pandas/pandas.html">zoos</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="../../pages/404/404.html">contact us</a>
+              </li>
+              <li class="footer-menu__item">
+                <a href="https://www.figma.com/file/vzrwoqf0kSG1uOify8BRBR/online-zoo?node-id=0%3A1">design</a>
+              </li> 
+            </ul>
+          </nav>
+        </div>
+        <div class="footer-item footer-copyright">
+          <p>Design by Lemeshko Kateryna ©RSSchool and ©Yem Digital 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

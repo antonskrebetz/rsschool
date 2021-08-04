@@ -1,0 +1,65 @@
+@import "../../styles.scss";
+
+.winners-table {
+  font-size: 17px;
+  width: 50%;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+.winners-table h1 {
+  margin-bottom: 3%;
+}
+
+.winner-table:first-child {
+  display: none;
+ }
+
+.table-line {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+.table-line svg {
+  transform: scale(0.4);
+}
+
+.table-line div {
+  width: 20%;
+  text-align: center;
+}
+
+.head-line {
+  padding: 10px;
+  height: 20px;
+  color: $gray;
+  background: white;
+}
+
+.time-header,
+.wins-header {  
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.table-name {
+  color: $green;
+}
+
+.name-header {
+  color: $gray;
+}
+
+
+

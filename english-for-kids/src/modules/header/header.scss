@@ -1,0 +1,121 @@
+@import '../commonStyles.scss';
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  background-color: $gray;
+
+  a {
+    display: block;
+  }
+
+  &_btn,
+  &_stat {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &_btn {
+    background-image: url('../../assets/icons/menu.svg');
+  }
+
+  &_stat {
+    background-image: url('../../assets/icons/statistical.svg');
+  }
+
+  &_logo {
+    font-size: 30px;
+    text-transform: uppercase;
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.menu-wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+
+  &.open {
+    pointer-events: auto;
+  }
+}
+
+.menu {
+  padding-top: 40px;
+  width: 300px;
+  height: 100%;
+  z-index: 1001;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: $white;
+  background-color: $gray;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  visibility: hidden;
+  transform: translateX(-300px);
+  transition: transform .3s ease-out;
+
+  &_header {
+    padding: 20px 20px 40px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  &_title {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  &_item {
+    padding: 15px 0 15px 40px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      color: $gray;
+      background-color: $white;
+      transform: translate(-5px, -5px);
+    }
+
+    &.active {
+      color: $gray;
+      background-color: $white;
+    }
+  }
+
+  &.open {
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+}
+
+.btn_close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-size: contain;
+  background-image: url('../../assets/icons/cancel.svg');
+  transition: transform 0.3s ease-out;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
+}

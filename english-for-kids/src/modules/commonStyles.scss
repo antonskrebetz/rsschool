@@ -1,0 +1,56 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+$white: #ffffff;
+$gray: #333333;
+$middle-gray: #ababab;
+$ligth-gray: #e5e5e5;
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

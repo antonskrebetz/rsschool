@@ -1,0 +1,59 @@
+@import "../../styles.scss";
+
+.toolbar {
+    min-width: 320px;
+    padding: 5px;
+    width: 18%;
+    text-align: center;    
+    margin: 0 auto; 
+    margin-bottom: 2%;   
+}
+
+
+.create,
+.update,
+.race-control {
+    display: flex;
+    align-items: center;
+    margin: 3% auto;
+    justify-content: space-between;
+}
+
+
+.create div, 
+.update div,
+.race-control div {
+    padding: 5px;
+    width: 32%;
+    color: $gray;
+    background-color: white;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+    display: block; 
+    padding: 0.5%;       
+    text-align: center;    
+}
+
+.input-textset,
+.input-textupdate {
+    width: 40%;
+}
+
+.race-control {
+
+    .race-all {
+        background: $green;
+    }
+
+    .reset-all {
+        background: $pink;
+    }
+
+    .random-cars {
+        background: $yellow;
+    }
+}

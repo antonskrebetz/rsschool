@@ -1,0 +1,29 @@
+@import "../../styles.scss";
+
+.header {    
+    height: 3rem;
+    background: $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+
+  .header a {
+    width: 155px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  a.active {
+    color: $gray;
+    background: white;
+  }
+
+  

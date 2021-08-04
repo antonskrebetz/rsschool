@@ -1,0 +1,31 @@
+$gray: #333333;
+$ligth-gray: #777777;
+$pink: #ff8686;
+$green: #86ffbc;
+$yellow: #ffe986;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 20px;  
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin-bottom: 1%;
+  padding-top: 10px; 
+  font-size: 50px;
+  color: white;
+  text-align: center; 
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;   
+  user-select: none;
+  font-size: 14px;
+  color: white;
+}

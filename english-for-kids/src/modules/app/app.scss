@@ -1,0 +1,70 @@
+@import '../commonStyles.scss';
+
+.card {
+  cursor: pointer;
+  position: relative;
+  perspective: 2000px;
+  user-select: none;
+
+  &:hover &_front,
+  &:hover &_back {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  &_img {
+    margin: 20px;
+    width: calc(100% - 40px);
+    pointer-events: none;
+  }
+
+  &_front, 
+  &_back {
+    width: 255px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: transform .5s ease, box-shadow .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &_front {
+    position: relative;
+  }
+
+  &_back {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &_descr,
+  &_back_descr {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    border-top: 1px solid $middle-gray;
+  }
+
+  &_btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+    background: url('../../assets/icons/return.svg') no-repeat center/50% $white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+
+  &.rotate &_front {
+    transform: rotateY(180deg);
+}
+
+  &.rotate &_back {
+    transform: rotateY(360deg);
+  }
+}

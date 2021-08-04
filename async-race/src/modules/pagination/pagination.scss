@@ -1,0 +1,41 @@
+@import "../../styles.scss";
+
+.list-control {
+    display: flex; 
+    justify-content: center;   
+    align-items: center;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
+.list-control div {
+    margin-right: 1%;
+    font-size: 14px;
+}
+
+.page-number {
+    text-transform: uppercase;
+}
+
+.prev-btn,
+.next-btn {
+    padding: 5px;
+    cursor: pointer;
+    color: #333333;
+    background-color: white;
+    transition: all .3s;
+
+    &:hover {
+        background-color: $green;
+    }
+}
+
+.btn-disable {
+    color: white;
+    pointer-events: none;
+    background: $ligth-gray;
+}
+
+.cars-count {
+    text-transform: uppercase;
+}

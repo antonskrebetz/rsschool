@@ -1,0 +1,89 @@
+@import "../../styles.scss";
+
+.car-track {    
+    margin: 0 2% 2%;
+    
+}
+
+.car-track__btns {
+    display:flex;
+    margin-bottom: 0.3%;
+    align-items: center;
+}
+
+.car-block__road {
+    display:flex;
+    border-bottom: 1px solid white;
+    height: 30px;  
+}
+
+.car-title {
+    color: #86ffbc;
+    text-transform: uppercase;
+}
+
+.car-img {
+    height: 50px;
+    margin-bottom: 0;
+    position: absolute;
+    z-index: 199;
+    fill: rgb(224, 222, 0);        
+}
+
+.car-img svg{     
+    height: 70%;      
+}
+
+.flag-img {
+    height: 30px;
+    margin-bottom: 0;
+    right: 15%;
+    position: absolute;
+}
+
+.btn-select,
+.btn-remove,
+.btn-start,
+.btn-reset {
+    margin-right: 1%;
+    padding: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+.btn-start,
+.btn-reset {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.car-btn-disable {
+    pointer-events: none;
+    color: $ligth-gray;
+}
+
+.disable {
+    pointer-events: none;
+    color: white !important;
+    background-color: $ligth-gray !important;
+}
+
+.drive {
+    animation-name: drive;
+    animation-fill-mode: forwards;    
+}
+
+
+@keyframes drive {
+    0% {
+        left: 2%;
+    }
+    100% {
+        left: 85%;
+    }
+}
